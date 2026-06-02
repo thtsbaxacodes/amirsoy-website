@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html class="dark w-full" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Suite Chalet — Amirsoy Mountain Resort</title>
+<meta name="description" content="Suite Chalet at Amirsoy — 209m² two-storey, 4 bedrooms, 49m² terrace, 65+42-inch TVs, up to 8 guests. Breakfast included."/><link rel="icon" href="img/logo-svg-white.svg" type="image/svg+xml"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: { extend: { colors: { "background": "#131313", "surface-container": "#1f1f1f", "outline-variant": "#444748", "on-surface-variant": "#c4c7c8" }}}
+  }
+</script>
+<style>
+  body { font-family: 'Readex Pro', sans-serif; background: #131313; color: #fff; margin: 0; padding: 0; }
+  .gallery-img { cursor: zoom-in; transition: transform 0.4s ease, opacity 0.2s; }
+  .gallery-img:hover { transform: scale(1.03); opacity: 0.9; }
+  #lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 9999; align-items: center; justify-content: center; }
+  #lightbox.open { display: flex; }
+  #lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; border-radius: 8px; }
+</style>
+<script src="lang/en.js"></script>
+<script src="lang/ru.js"></script>
+<script src="lang/uz.js"></script>
+<script src="lang-init.js"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-[#131313]/90 backdrop-blur-xl border-b border-[#444748]">
+  <div class="flex items-center justify-between px-6 md:px-16 py-4">
+    <a href="index.html"><img src="img/logo-svg-white.svg" alt="Amirsoy" class="h-8 w-auto"/></a>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <div class="relative group">
+        <a class="flex items-center gap-1 text-[#c4c7c8] hover:text-white transition-colors duration-200" href="about.html">About Us
+          <svg class="w-3 h-3 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <div class="absolute left-1/2 -translate-x-1/2 top-full pt-3 hidden group-hover:block">
+          <div class="bg-[#1f1f1f]/95 backdrop-blur-xl border border-white/10 rounded-xl overflow-hidden min-w-[180px] shadow-xl">
+            <a href="about.html" class="block px-4 py-2.5 text-sm text-[#c4c7c8] hover:text-white hover:bg-white/5 transition-colors duration-150">Resort Info</a>
+            <a href="businesses.html" class="block px-4 py-2.5 text-sm text-[#c4c7c8] hover:text-white hover:bg-white/5 transition-colors duration-150">Businesses</a>
+            <a href="safety-rules.html" class="block px-4 py-2.5 text-sm text-[#c4c7c8] hover:text-white hover:bg-white/5 transition-colors duration-150">Safety Rules</a>
+          </div>
+        </div>
+      </div>
+      <a href="activities.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Activities</a>
+      <a href="rooms.html" class="text-white font-medium hover:text-white transition-colors duration-200">Rooms</a>
+      <a href="restaurants.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Restaurants</a>
+      <a href="contact.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Contact</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="https://tickets.amirsoy.com" target="_blank" class="hidden md:inline-flex bg-white text-[#131313] font-semibold text-sm px-5 py-2 rounded-full hover:bg-white/90 transition-all duration-200">Book Now</a>
+      <button class="md:hidden p-2 text-[#c4c7c8] hover:text-white" onclick="document.getElementById('mob-menu').classList.toggle('hidden')" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mob-menu" class="hidden md:hidden border-t border-[#444748] px-6 py-4 flex flex-col gap-4 text-sm">
+    <a href="about.html" class="text-[#c4c7c8] hover:text-white py-1">About Us</a>
+    <a href="businesses.html" class="text-[#c4c7c8] hover:text-white py-1 pl-4">↳ Businesses</a>
+    <a href="safety-rules.html" class="text-[#c4c7c8] hover:text-white py-1 pl-4">↳ Safety Rules</a>
+    <a href="activities.html" class="text-[#c4c7c8] hover:text-white py-1">Activities</a>
+    <a href="rooms.html" class="text-white font-medium py-1">Rooms</a>
+    <a href="restaurants.html" class="text-[#c4c7c8] hover:text-white py-1">Restaurants</a>
+    <a href="contact.html" class="text-[#c4c7c8] hover:text-white py-1">Contact</a>
+    <a href="https://tickets.amirsoy.com" target="_blank" class="bg-white text-[#131313] font-semibold px-5 py-2.5 rounded-full text-center mt-1">Book Now</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="relative h-[70vh] overflow-hidden">
+  <img src="img/room/suite/suite-23.jpg" alt="Suite Chalet" class="w-full h-full object-cover"/>
+  <div class="absolute inset-0 bg-gradient-to-t from-[#131313] via-[#131313]/30 to-transparent"></div>
+  <div class="absolute bottom-0 left-0 right-0 px-6 md:px-16 pb-12">
+    <div class="max-w-5xl mx-auto">
+      <p class="text-xs font-medium tracking-[0.3em] uppercase text-white/60 mb-3">Two-storey · 8 guests</p>
+      <h1 class="text-5xl md:text-7xl font-bold tracking-tight">Suite Chalet</h1>
+    </div>
+  </div>
+</div>
+
+<!-- SPECS BAR -->
+<div class="bg-[#1b1b1b] border-b border-[#444748] py-5 px-6 md:px-16">
+  <div class="max-w-5xl mx-auto flex flex-wrap gap-x-10 gap-y-3">
+    <div><p class="text-[#c4c7c8] text-xs mb-0.5">Total area</p><p class="font-semibold text-sm">209 m²</p></div>
+    <div><p class="text-[#c4c7c8] text-xs mb-0.5">Terrace</p><p class="font-semibold text-sm">49 m²</p></div>
+    <div><p class="text-[#c4c7c8] text-xs mb-0.5">Guests</p><p class="font-semibold text-sm">up to 8</p></div>
+    <div><p class="text-[#c4c7c8] text-xs mb-0.5">Bedrooms</p><p class="font-semibold text-sm">4 en-suite (2 per floor)</p></div>
+    <div><p class="text-[#c4c7c8] text-xs mb-0.5">Beds</p><p class="font-semibold text-sm">2 double · 4 single</p></div>
+    <div><p class="text-[#c4c7c8] text-xs mb-0.5">Floors</p><p class="font-semibold text-sm">2</p></div>
+    <div><p class="text-[#c4c7c8] text-xs mb-0.5">Check-in</p><p class="font-semibold text-sm">15:00</p></div>
+    <div><p class="text-[#c4c7c8] text-xs mb-0.5">Check-out</p><p class="font-semibold text-sm">12:00</p></div>
+    <div><p class="text-[#c4c7c8] text-xs mb-0.5">Breakfast</p><p class="font-semibold text-sm">Included</p></div>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="max-w-5xl mx-auto px-6 md:px-16 py-16 flex flex-col gap-16">
+
+  <div class="grid md:grid-cols-2 gap-12">
+    <div>
+      <h2 class="text-2xl font-semibold mb-5">About the chalet</h2>
+      <p class="text-[#c4c7c8] leading-relaxed mb-4">A spacious two-storey chalet totalling 209 m², including a 49 m² open panoramic terrace overlooking the valley. Four en-suite bedrooms are distributed across both floors — two on each level — accommodating up to 8 guests with full privacy.</p>
+      <p class="text-[#c4c7c8] leading-relaxed mb-4">The ground floor features a living room with a 65" TV, a high-ceiling dining area, and a fully equipped kitchen. Each bedroom has its own 42" TV. All bathrooms are decorated with wood-type finishes and stone sinks, with signature Amouage amenities.</p>
+      <p class="text-[#c4c7c8] leading-relaxed">Premium mattresses with unique filler combinations ensure restorative sleep. The terrace and fireplace are the natural gathering points after a day on the slopes.</p>
+    </div>
+    <div>
+      <h2 class="text-2xl font-semibold mb-5">Amenities</h2>
+      <div class="grid grid-cols-1 gap-2 text-sm">
+        <div class="flex items-center gap-3 py-2.5 border-b border-[#444748]"><span class="text-xl">📺</span><span>65" TV (living room) · 42" TV (each bedroom)</span></div>
+        <div class="flex items-center gap-3 py-2.5 border-b border-[#444748]"><span class="text-xl">🔥</span><span>Fireplace &amp; brazier</span></div>
+        <div class="flex items-center gap-3 py-2.5 border-b border-[#444748]"><span class="text-xl">🍳</span><span>Fully equipped kitchen</span></div>
+        <div class="flex items-center gap-3 py-2.5 border-b border-[#444748]"><span class="text-xl">🏔️</span><span>49 m² open panoramic terrace</span></div>
+        <div class="flex items-center gap-3 py-2.5 border-b border-[#444748]"><span class="text-xl">🛏️</span><span>Premium mattresses with unique fillers</span></div>
+        <div class="flex items-center gap-3 py-2.5 border-b border-[#444748]"><span class="text-xl">🪨</span><span>Wood &amp; stone sink bathrooms</span></div>
+        <div class="flex items-center gap-3 py-2.5 border-b border-[#444748]"><span class="text-xl">🌿</span><span>Signature Amouage toiletries</span></div>
+        <div class="flex items-center gap-3 py-2.5 border-b border-[#444748]"><span class="text-xl">🍷</span><span>Minibar</span></div>
+        <div class="flex items-center gap-3 py-2.5"><span class="text-xl">📶</span><span>Wi-Fi throughout</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-6">Gallery</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+      <div class="sm:col-span-2 overflow-hidden rounded-xl h-72 md:h-80">
+        <img src="img/room/suite/suite-23-s-1.jpg" alt="Suite Chalet living area" class="gallery-img w-full h-full object-cover" onclick="openLightbox(this.src)"/>
+      </div>
+      <div class="overflow-hidden rounded-xl h-72 md:h-80">
+        <img src="img/room/suite/suite-23-s-2.jpg" alt="Suite Chalet bedroom" class="gallery-img w-full h-full object-cover" onclick="openLightbox(this.src)"/>
+      </div>
+      <div class="overflow-hidden rounded-xl h-44">
+        <img src="img/room/suite/suite-23-s-3.jpg" alt="Suite Chalet bathroom" class="gallery-img w-full h-full object-cover" onclick="openLightbox(this.src)"/>
+      </div>
+      <div class="overflow-hidden rounded-xl h-44">
+        <img src="img/room/suite/suite-23-s-4.jpg" alt="Suite Chalet terrace" class="gallery-img w-full h-full object-cover" onclick="openLightbox(this.src)"/>
+      </div>
+      <div class="overflow-hidden rounded-xl h-44">
+        <img src="img/room/suite/suite-23-s-5.jpg" alt="Suite Chalet kitchen" class="gallery-img w-full h-full object-cover" onclick="openLightbox(this.src)"/>
+      </div>
+      <div class="overflow-hidden rounded-xl h-44">
+        <img src="img/room/suite/suite-23-s-6.jpg" alt="Suite Chalet dining" class="gallery-img w-full h-full object-cover" onclick="openLightbox(this.src)"/>
+      </div>
+      <div class="overflow-hidden rounded-xl h-44">
+        <img src="img/room/suite/suite-7-b.jpg" alt="Suite Chalet fireplace" class="gallery-img w-full h-full object-cover" onclick="openLightbox(this.src)"/>
+      </div>
+      <div class="overflow-hidden rounded-xl h-44">
+        <img src="img/room/suite/suite-8-b.jpg" alt="Suite Chalet exterior" class="gallery-img w-full h-full object-cover" onclick="openLightbox(this.src)"/>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resort facilities -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-6">Included with your stay</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <div class="bg-[#1f1f1f] border border-[#444748] rounded-xl p-4 text-center"><div class="text-2xl mb-2">🏊</div><p class="text-sm font-medium">Heated outdoor pool</p></div>
+      <div class="bg-[#1f1f1f] border border-[#444748] rounded-xl p-4 text-center"><div class="text-2xl mb-2">🧖</div><p class="text-sm font-medium">Hammom &amp; SPA</p></div>
+      <div class="bg-[#1f1f1f] border border-[#444748] rounded-xl p-4 text-center"><div class="text-2xl mb-2">🚡</div><p class="text-sm font-medium">Ski-in / Ski-out</p></div>
+      <div class="bg-[#1f1f1f] border border-[#444748] rounded-xl p-4 text-center"><div class="text-2xl mb-2">🍽️</div><p class="text-sm font-medium">4 Restaurants</p></div>
+      <div class="bg-[#1f1f1f] border border-[#444748] rounded-xl p-4 text-center"><div class="text-2xl mb-2">🥞</div><p class="text-sm font-medium">Breakfast included</p></div>
+      <div class="bg-[#1f1f1f] border border-[#444748] rounded-xl p-4 text-center"><div class="text-2xl mb-2">🪵</div><p class="text-sm font-medium">Russian Banya</p></div>
+      <div class="bg-[#1f1f1f] border border-[#444748] rounded-xl p-4 text-center"><div class="text-2xl mb-2">🥾</div><p class="text-sm font-medium">Guided hiking tours</p></div>
+      <div class="bg-[#1f1f1f] border border-[#444748] rounded-xl p-4 text-center"><div class="text-2xl mb-2">🧑‍💼</div><p class="text-sm font-medium">Concierge service</p></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- BOOKING CTA -->
+<div class="bg-[#1b1b1b] border-t border-[#444748] py-16 px-6 md:px-16">
+  <div class="max-w-5xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-8">
+    <div>
+      <h2 class="text-2xl font-semibold mb-2">Book the Suite Chalet</h2>
+      <p class="text-[#c4c7c8] text-sm">Contact our reservations team for availability and pricing in UZS.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-3 shrink-0">
+      <a href="mailto:reservations@amirsoy.com" class="flex items-center justify-center gap-2 bg-white text-[#131313] font-semibold px-6 py-3 rounded-xl hover:bg-white/90 transition-colors duration-200 text-sm">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        reservations@amirsoy.com
+      </a>
+      <a href="tel:+998997912244" class="flex items-center justify-center gap-2 border border-[#444748] hover:border-white/40 text-[#c4c7c8] hover:text-white px-6 py-3 rounded-xl transition-colors duration-200 text-sm">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        +998 (99) 791-22-44
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-[#131313] border-t border-[#444748] pt-14 pb-8 px-6 md:px-16">
+  <div class="max-w-5xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-10 pb-10 border-b border-[#444748]">
+      <div>
+        <img src="img/logo-svg-white.svg" alt="Amirsoy" class="h-10 w-auto mb-4"/>
+        <p class="text-[#c4c7c8] text-sm leading-relaxed mb-5">Amirsoy Mountain Resort — an all-season destination 65 km from Tashkent in the Tian Shan Mountains.</p>
+        <div class="flex items-center gap-4">
+          <a href="https://www.facebook.com/amirsoyresort/" class="text-[#c4c7c8] hover:text-white transition-colors duration-200" aria-label="Facebook"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/amirsoyresort/" class="text-[#c4c7c8] hover:text-white transition-colors duration-200" aria-label="Instagram"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://t.me/amirsoy_resort" class="text-[#c4c7c8] hover:text-white transition-colors duration-200" aria-label="Telegram"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.68 7.92c-.12.56-.46.7-.94.44l-2.6-1.92-1.26 1.2c-.14.14-.26.26-.52.26l.18-2.62 4.72-4.26c.2-.18-.04-.28-.32-.1L7.46 14.5l-2.54-.8c-.56-.18-.58-.56.12-.82l9.92-3.82c.46-.18.86.1.68.74z"/></svg></a>
+          <a href="https://www.youtube.com/channel/UCCkNVd3cUbiBX_X566lNdgQ" class="text-[#c4c7c8] hover:text-white transition-colors duration-200" aria-label="YouTube"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <p class="text-xs font-medium tracking-widest uppercase text-[#c4c7c8] mb-4">Navigation</p>
+        <div class="flex flex-col gap-2.5 text-sm">
+          <a href="activities.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Activities</a>
+          <a href="rooms.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Accommodation</a>
+          <a href="restaurants.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Restaurants</a>
+          <a href="businesses.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Business</a>
+          <a href="contact.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Contact</a>
+        </div>
+      </div>
+      <div>
+        <p class="text-xs font-medium tracking-widest uppercase text-[#c4c7c8] mb-4">Contact</p>
+        <div class="flex flex-col gap-2.5 text-sm text-[#c4c7c8]">
+          <a href="tel:+998712002290" class="hover:text-white transition-colors duration-200">+998 (71) 200-22-90</a>
+          <a href="mailto:info@amirsoy.com" class="hover:text-white transition-colors duration-200">info@amirsoy.com</a>
+          <span>Bostonliq district, Chimgan Territory,<br/>Tashkent region, Uzbekistan</span>
+          <a href="https://tickets.amirsoy.com" target="_blank" class="mt-2 inline-flex items-center justify-center bg-white text-[#131313] font-semibold px-5 py-2.5 rounded-full text-sm hover:bg-white/90 transition-colors duration-200">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="pt-6 flex flex-wrap items-center justify-between gap-4 text-xs text-[#c4c7c8]">
+      <p>© 2026 Amirsoy Mountain Resort. All rights reserved.</p>
+      <div class="flex gap-6">
+        <a href="offer.html" class="hover:text-white transition-colors duration-200">Public Offer</a>
+        <a href="privacy-policy.html" class="hover:text-white transition-colors duration-200">Privacy Policy</a>
+        <a href="safety-rules.html" class="hover:text-white transition-colors duration-200">Safety Rules</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" style="opacity:0;pointer-events:none;" class="fixed bottom-6 right-6 z-50 bg-white text-[#131313] w-10 h-10 rounded-full shadow-xl flex items-center justify-center transition-opacity duration-300 hover:bg-white/90" aria-label="Back to top">
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+</button>
+<script>var _st=document.getElementById('scroll-top');window.addEventListener('scroll',function(){var v=window.scrollY>300;_st.style.opacity=v?'1':'0';_st.style.pointerEvents=v?'auto':'none';});</script>
+<div id="lightbox" onclick="closeLightbox()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9999;align-items:center;justify-content:center;">
+  <button onclick="event.stopPropagation();lightboxNav(-1)" style="position:absolute;left:16px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.15);border:none;color:#fff;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:20px;" aria-label="Previous">&#8249;</button>
+  <img id="lightbox-img" src="" alt="" onclick="event.stopPropagation()" style="max-width:90vw;max-height:90vh;object-fit:contain;border-radius:8px;"/>
+  <button onclick="event.stopPropagation();lightboxNav(1)" style="position:absolute;right:16px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.15);border:none;color:#fff;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:20px;" aria-label="Next">&#8250;</button>
+</div>
+<script>
+  var _imgs=[],_idx=0;
+  function _buildGallery(){_imgs=Array.from(document.querySelectorAll('.gallery-img')).map(function(i){return i.src;});}
+  function openLightbox(src){_buildGallery();_idx=_imgs.indexOf(src);if(_idx<0)_idx=0;document.getElementById('lightbox-img').src=src;document.getElementById('lightbox').style.display='flex';}
+  function closeLightbox(){document.getElementById('lightbox').style.display='none';}
+  function lightboxNav(d){_idx=(_idx+d+_imgs.length)%_imgs.length;document.getElementById('lightbox-img').src=_imgs[_idx];}
+  document.addEventListener('keydown',function(e){var lb=document.getElementById('lightbox');if(lb.style.display!=='flex')return;if(e.key==='Escape')closeLightbox();if(e.key==='ArrowRight')lightboxNav(1);if(e.key==='ArrowLeft')lightboxNav(-1);});
+</script>
+</body>
+</html>

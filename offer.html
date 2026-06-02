@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html class="dark w-full" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Public Offer — Amirsoy Mountain Resort</title>
+<meta name="description" content="Public offer agreement for the purchase of goods and services from Amirsoy Mountain Resort (JV LLC Amirsoy)."/>
+<link rel="icon" href="img/logo-svg-white.svg" type="image/svg+xml"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: { extend: { colors: { "background": "#131313", "surface-container": "#1f1f1f", "surface-container-low": "#1b1b1b", "outline-variant": "#444748", "on-surface-variant": "#c4c7c8", "primary": "#ffffff" } } }
+  }
+</script>
+<style>
+  body { font-family: 'Readex Pro', sans-serif; background: #131313; color: #ffffff; margin: 0; padding: 0; }
+</style>
+<script src="lang/en.js"></script>
+<script src="lang/ru.js"></script>
+<script src="lang/uz.js"></script>
+<script src="lang-init.js"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-[#131313]/90 backdrop-blur-xl border-b border-[#444748]">
+  <div class="flex items-center justify-between px-6 md:px-16 py-4">
+    <a href="index.html"><img src="img/logo-svg-white.svg" alt="Amirsoy" class="h-8 w-auto"/></a>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <div class="relative group">
+        <a class="flex items-center gap-1 text-[#c4c7c8] hover:text-white transition-colors duration-200" href="about.html">About Us
+          <svg class="w-3 h-3 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <div class="absolute left-1/2 -translate-x-1/2 top-full pt-3 hidden group-hover:block">
+          <div class="bg-[#1f1f1f]/95 backdrop-blur-xl border border-white/10 rounded-xl overflow-hidden min-w-[180px] shadow-xl">
+            <a href="about.html" class="block px-4 py-2.5 text-sm text-[#c4c7c8] hover:text-white hover:bg-white/5 transition-colors duration-150">Resort Info</a>
+            <a href="businesses.html" class="block px-4 py-2.5 text-sm text-[#c4c7c8] hover:text-white hover:bg-white/5 transition-colors duration-150">Businesses</a>
+            <a href="safety-rules.html" class="block px-4 py-2.5 text-sm text-[#c4c7c8] hover:text-white hover:bg-white/5 transition-colors duration-150">Safety Rules</a>
+          </div>
+        </div>
+      </div>
+      <a href="activities.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Activities</a>
+      <a href="rooms.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Rooms</a>
+      <a href="restaurants.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Restaurants</a>
+      <a href="contact.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Contact</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="https://tickets.amirsoy.com" target="_blank" class="hidden md:inline-flex bg-white text-[#131313] font-semibold text-sm px-5 py-2 rounded-full hover:bg-white/90 transition-all duration-200">Book Now</a>
+      <button class="md:hidden p-2 text-[#c4c7c8] hover:text-white" onclick="document.getElementById('mob-menu').classList.toggle('hidden')" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mob-menu" class="hidden md:hidden border-t border-[#444748] px-6 py-4 flex flex-col gap-4 text-sm">
+    <a href="about.html" class="text-[#c4c7c8] hover:text-white py-1">About Us</a>
+    <a href="businesses.html" class="text-[#c4c7c8] hover:text-white py-1 pl-4">↳ Businesses</a>
+    <a href="safety-rules.html" class="text-[#c4c7c8] hover:text-white py-1 pl-4">↳ Safety Rules</a>
+    <a href="activities.html" class="text-[#c4c7c8] hover:text-white py-1">Activities</a>
+    <a href="rooms.html" class="text-[#c4c7c8] hover:text-white py-1">Rooms</a>
+    <a href="restaurants.html" class="text-[#c4c7c8] hover:text-white py-1">Restaurants</a>
+    <a href="contact.html" class="text-[#c4c7c8] hover:text-white py-1">Contact</a>
+    <a href="https://tickets.amirsoy.com" target="_blank" class="bg-white text-[#131313] font-semibold px-5 py-2.5 rounded-full text-center mt-1">Book Now</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<div class="bg-surface-container-low border-b border-outline-variant py-16 px-6 md:px-16">
+  <p class="text-xs font-medium tracking-widest uppercase text-on-surface-variant mb-3">Amirsoy Resort</p>
+  <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">Public Offer</h1>
+  <p class="text-on-surface-variant text-base max-w-2xl">Public offer agreement for the purchase of goods and services from Joint Venture Limited Liability Company "Amirsoy" (INN 305152772), Tashkent region, Bostonliq district.</p>
+</div>
+
+<!-- CONTENT -->
+<div class="max-w-4xl mx-auto px-6 md:px-16 py-16 flex flex-col gap-12">
+
+  <!-- Terms -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-5 pb-3 border-b border-outline-variant">Terms & Definitions</h2>
+    <div class="bg-surface-container rounded-xl p-6 text-sm text-on-surface-variant leading-relaxed flex flex-col gap-3">
+      <p><span class="text-primary font-medium">Operator / Seller:</span> Joint Venture Limited Liability Company "Amirsoy" (INN 305152772), located in Tashkent region, Bostonliq district, Chimgan Territory, Republic of Uzbekistan.</p>
+      <p><span class="text-primary font-medium">Buyer:</span> Any individual who accepts this public offer and provides personal data for the purpose of purchasing goods or services.</p>
+      <p><span class="text-primary font-medium">Website:</span> The official online platform operated by JV LLC "Amirsoy" through which services and goods may be purchased.</p>
+      <p><span class="text-primary font-medium">Voucher:</span> A digital document confirming payment for services, delivered via email after successful transaction.</p>
+    </div>
+  </div>
+
+  <!-- Section 1 -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-5 pb-3 border-b border-outline-variant">1. General Provisions</h2>
+    <div class="bg-surface-container rounded-xl p-6 text-sm text-on-surface-variant leading-relaxed flex flex-col gap-3">
+      <p>This document constitutes a public offer in accordance with Article 369 of the Civil Code of the Republic of Uzbekistan.</p>
+      <p>Both parties confirm they possess the legal capacity to enter into this agreement.</p>
+      <p>Acceptance of this offer occurs upon completion of an order on the website. By placing an order, the buyer agrees to all terms of this offer in full.</p>
+      <p>All legal relationships arising from this offer are governed by the legislation of the Republic of Uzbekistan.</p>
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-5 pb-3 border-b border-outline-variant">2. Subject of the Contract</h2>
+    <div class="bg-surface-container rounded-xl p-6 text-sm text-on-surface-variant leading-relaxed flex flex-col gap-3">
+      <p>The seller undertakes to transfer ownership of goods or provide services, and the buyer undertakes to accept and pay for them in accordance with the terms of this offer.</p>
+      <p>Ownership of goods transfers to the buyer upon full payment and physical receipt of the goods or services. The risk of accidental loss transfers simultaneously.</p>
+    </div>
+  </div>
+
+  <!-- Section 3 -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-5 pb-3 border-b border-outline-variant">3. Rights & Obligations of the Parties</h2>
+    <div class="bg-surface-container rounded-xl p-6 text-sm text-on-surface-variant leading-relaxed flex flex-col gap-3">
+      <p><span class="text-primary font-medium">The Seller undertakes to:</span></p>
+      <ul class="flex flex-col gap-2 pl-4">
+        <li class="flex gap-2"><span class="text-primary mt-0.5">—</span><span>Fulfill all obligations in accordance with applicable legislation</span></li>
+        <li class="flex gap-2"><span class="text-primary mt-0.5">—</span><span>Process buyer personal data confidentially and in compliance with data protection law</span></li>
+        <li class="flex gap-2"><span class="text-primary mt-0.5">—</span><span>Provide accurate information about goods and services offered</span></li>
+      </ul>
+      <p class="mt-2"><span class="text-primary font-medium">The Buyer undertakes to:</span></p>
+      <ul class="flex flex-col gap-2 pl-4">
+        <li class="flex gap-2"><span class="text-primary mt-0.5">—</span><span>Provide accurate and complete personal information during registration and ordering</span></li>
+        <li class="flex gap-2"><span class="text-primary mt-0.5">—</span><span>Pay for goods and services in full prior to use</span></li>
+        <li class="flex gap-2"><span class="text-primary mt-0.5">—</span><span>Comply with all terms of this offer and resort rules</span></li>
+        <li class="flex gap-2"><span class="text-primary mt-0.5">—</span><span>Keep account credentials confidential — credentials are non-transferable</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Section 4 -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-5 pb-3 border-b border-outline-variant">4. Registration</h2>
+    <div class="bg-surface-container rounded-xl p-6 text-sm text-on-surface-variant leading-relaxed flex flex-col gap-3">
+      <p>To access purchasing services, users must register with their full name, a valid email address, and a self-created password.</p>
+      <p>Completing the registration process constitutes full acceptance of all conditions set out in this public offer.</p>
+    </div>
+  </div>
+
+  <!-- Section 5 -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-5 pb-3 border-b border-outline-variant">5. Purchase of Goods & Services</h2>
+    <div class="bg-surface-container rounded-xl p-6 text-sm text-on-surface-variant leading-relaxed flex flex-col gap-3">
+      <p>All goods and services purchased through the website are valid exclusively at the Amirsoy Mountain Resort facilities.</p>
+      <p>The terms and conditions of a purchase cannot be modified after the transaction has been completed.</p>
+    </div>
+  </div>
+
+  <!-- Section 6 -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-5 pb-3 border-b border-outline-variant">6. Using Purchased Items</h2>
+    <div class="bg-surface-container rounded-xl p-6 text-sm text-on-surface-variant leading-relaxed flex flex-col gap-3">
+      <p>Upon successful payment, a voucher will be delivered to the buyer's registered email address.</p>
+      <p>Vouchers contain a digital QR code that enables access to purchased services at resort facilities. Present the QR code at the relevant service point upon arrival.</p>
+    </div>
+  </div>
+
+  <!-- Section 7 -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-5 pb-3 border-b border-outline-variant">7. Payment</h2>
+    <div class="bg-surface-container rounded-xl p-6 text-sm text-on-surface-variant leading-relaxed flex flex-col gap-3">
+      <p>All prices on the website are listed in Uzbek sum (UZS).</p>
+      <p>Payment is processed via UZCARD card transfer through the website's secure payment interface.</p>
+      <p>Unilateral changes to prices by the seller do not affect purchases that have already been confirmed and paid for.</p>
+    </div>
+  </div>
+
+  <!-- Section 8 -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-5 pb-3 border-b border-outline-variant">8. Returns & Exchanges</h2>
+    <div class="bg-surface-container rounded-xl p-6 text-sm text-on-surface-variant leading-relaxed flex flex-col gap-3">
+      <p>Refund requests must be submitted via a written application at the resort cashier.</p>
+      <p>The seller will review refund requests on a case-by-case basis, taking into consideration circumstances of non-use and any applicable weather-related closures.</p>
+      <p>Refunds are not guaranteed and are issued solely at the discretion of resort management in accordance with applicable Uzbek law.</p>
+    </div>
+  </div>
+
+  <!-- Section 9 -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-5 pb-3 border-b border-outline-variant">9. Force Majeure</h2>
+    <div class="bg-surface-container rounded-xl p-6 text-sm text-on-surface-variant leading-relaxed">
+      <p>Neither party shall be held liable for failure to fulfill obligations resulting from circumstances beyond their reasonable control, including natural disasters, acts of government, or other force majeure events. The affected party must notify the other as soon as possible.</p>
+    </div>
+  </div>
+
+  <!-- Section 10 -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-5 pb-3 border-b border-outline-variant">10. Intellectual Property</h2>
+    <div class="bg-surface-container rounded-xl p-6 text-sm text-on-surface-variant leading-relaxed">
+      <p>All content on the Amirsoy website — including text, images, logos, graphics, and software — is the exclusive intellectual property of JV LLC "Amirsoy" and is protected by the copyright laws of the Republic of Uzbekistan. Unauthorized reproduction or use is prohibited.</p>
+    </div>
+  </div>
+
+  <!-- Section 11 -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-5 pb-3 border-b border-outline-variant">11. Dispute Resolution</h2>
+    <div class="bg-surface-container rounded-xl p-6 text-sm text-on-surface-variant leading-relaxed flex flex-col gap-3">
+      <p>All disputes arising from this offer shall first be addressed through negotiation between the parties.</p>
+      <p>If no resolution is reached through negotiation, disputes shall be resolved through the courts of the Republic of Uzbekistan in accordance with applicable law.</p>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-5 pb-3 border-b border-outline-variant">Contact</h2>
+    <div class="bg-surface-container rounded-xl p-6 text-sm text-on-surface-variant leading-relaxed flex flex-col gap-2">
+      <p class="text-primary font-medium">JV LLC "Amirsoy" (INN 305152772)</p>
+      <p>Uzbekistan, Tashkent region, Bostonliq district, Chimgan Territory</p>
+      <p>📞 +998 (71) 200-22-90</p>
+      <p>✉️ info@amirsoy.com</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-[#131313] border-t border-[#444748] pt-14 pb-8 px-6 md:px-16">
+  <div class="max-w-5xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-10 pb-10 border-b border-[#444748]">
+      <div>
+        <img src="img/logo-svg-white.svg" alt="Amirsoy" class="h-10 w-auto mb-4"/>
+        <p class="text-[#c4c7c8] text-sm leading-relaxed mb-5">Amirsoy Mountain Resort — an all-season destination 65 km from Tashkent in the Tian Shan Mountains.</p>
+        <div class="flex items-center gap-4">
+          <a href="https://www.facebook.com/amirsoyresort/" class="text-[#c4c7c8] hover:text-white transition-colors duration-200" aria-label="Facebook"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/amirsoyresort/" class="text-[#c4c7c8] hover:text-white transition-colors duration-200" aria-label="Instagram"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://t.me/amirsoy_resort" class="text-[#c4c7c8] hover:text-white transition-colors duration-200" aria-label="Telegram"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.68 7.92c-.12.56-.46.7-.94.44l-2.6-1.92-1.26 1.2c-.14.14-.26.26-.52.26l.18-2.62 4.72-4.26c.2-.18-.04-.28-.32-.1L7.46 14.5l-2.54-.8c-.56-.18-.58-.56.12-.82l9.92-3.82c.46-.18.86.1.68.74z"/></svg></a>
+          <a href="https://www.youtube.com/channel/UCCkNVd3cUbiBX_X566lNdgQ" class="text-[#c4c7c8] hover:text-white transition-colors duration-200" aria-label="YouTube"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <p class="text-xs font-medium tracking-widest uppercase text-[#c4c7c8] mb-4">Navigation</p>
+        <div class="flex flex-col gap-2.5 text-sm">
+          <a href="activities.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Activities</a>
+          <a href="rooms.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Accommodation</a>
+          <a href="restaurants.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Restaurants</a>
+          <a href="businesses.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Business</a>
+          <a href="contact.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Contact</a>
+        </div>
+      </div>
+      <div>
+        <p class="text-xs font-medium tracking-widest uppercase text-[#c4c7c8] mb-4">Contact</p>
+        <div class="flex flex-col gap-2.5 text-sm text-[#c4c7c8]">
+          <a href="tel:+998712002290" class="hover:text-white transition-colors duration-200">+998 (71) 200-22-90</a>
+          <a href="mailto:info@amirsoy.com" class="hover:text-white transition-colors duration-200">info@amirsoy.com</a>
+          <span>Bostonliq district, Chimgan Territory,<br/>Tashkent region, Uzbekistan</span>
+          <a href="https://tickets.amirsoy.com" target="_blank" class="mt-2 inline-flex items-center justify-center bg-white text-[#131313] font-semibold px-5 py-2.5 rounded-full text-sm hover:bg-white/90 transition-colors duration-200">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="pt-6 flex flex-wrap items-center justify-between gap-4 text-xs text-[#c4c7c8]">
+      <p>© 2026 Amirsoy Mountain Resort. All rights reserved.</p>
+      <div class="flex gap-6">
+        <a href="offer.html" class="hover:text-white transition-colors duration-200">Public Offer</a>
+        <a href="privacy-policy.html" class="hover:text-white transition-colors duration-200">Privacy Policy</a>
+        <a href="safety-rules.html" class="hover:text-white transition-colors duration-200">Safety Rules</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" style="opacity:0;pointer-events:none;" class="fixed bottom-6 right-6 z-50 bg-white text-[#131313] w-10 h-10 rounded-full shadow-xl flex items-center justify-center transition-opacity duration-300 hover:bg-white/90" aria-label="Back to top">
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+</button>
+<script>var _st=document.getElementById('scroll-top');window.addEventListener('scroll',function(){var v=window.scrollY>300;_st.style.opacity=v?'1':'0';_st.style.pointerEvents=v?'auto':'none';});</script>
+</body>
+</html>

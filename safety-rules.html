@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html class="dark w-full" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Safety Rules — Amirsoy Mountain Resort</title>
+<meta name="description" content="Safety rules for guests at Amirsoy Mountain Resort — ski slope rules, gondola guidelines, and resort regulations for a safe visit."/>
+<link rel="icon" href="img/logo-svg-white.svg" type="image/svg+xml"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: { extend: { colors: { "background": "#131313", "surface-container": "#1f1f1f", "surface-container-low": "#1b1b1b", "outline-variant": "#444748", "on-surface-variant": "#c4c7c8", "primary": "#ffffff" } } }
+  }
+</script>
+<style>
+  body { font-family: 'Readex Pro', sans-serif; background: #131313; color: #ffffff; margin: 0; padding: 0; }
+  .rule-number { min-width: 32px; height: 32px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; flex-shrink: 0; }
+</style>
+<script src="lang/en.js"></script>
+<script src="lang/ru.js"></script>
+<script src="lang/uz.js"></script>
+<script src="lang-init.js"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-[#131313]/90 backdrop-blur-xl border-b border-[#444748]">
+  <div class="flex items-center justify-between px-6 md:px-16 py-4">
+    <a href="index.html"><img src="img/logo-svg-white.svg" alt="Amirsoy" class="h-8 w-auto"/></a>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <div class="relative group">
+        <a class="flex items-center gap-1 text-white font-medium hover:text-white transition-colors duration-200" href="about.html">About Us
+          <svg class="w-3 h-3 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <div class="absolute left-1/2 -translate-x-1/2 top-full pt-3 hidden group-hover:block">
+          <div class="bg-[#1f1f1f]/95 backdrop-blur-xl border border-white/10 rounded-xl overflow-hidden min-w-[180px] shadow-xl">
+            <a href="about.html" class="block px-4 py-2.5 text-sm text-[#c4c7c8] hover:text-white hover:bg-white/5 transition-colors duration-150">Resort Info</a>
+            <a href="businesses.html" class="block px-4 py-2.5 text-sm text-[#c4c7c8] hover:text-white hover:bg-white/5 transition-colors duration-150">Businesses</a>
+            <a href="safety-rules.html" class="block px-4 py-2.5 text-sm text-white font-medium hover:text-white hover:bg-white/5 transition-colors duration-150">Safety Rules</a>
+          </div>
+        </div>
+      </div>
+      <a href="activities.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Activities</a>
+      <a href="rooms.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Rooms</a>
+      <a href="restaurants.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Restaurants</a>
+      <a href="contact.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Contact</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="https://tickets.amirsoy.com" target="_blank" class="hidden md:inline-flex bg-white text-[#131313] font-semibold text-sm px-5 py-2 rounded-full hover:bg-white/90 transition-all duration-200">Book Now</a>
+      <button class="md:hidden p-2 text-[#c4c7c8] hover:text-white" onclick="document.getElementById('mob-menu').classList.toggle('hidden')" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mob-menu" class="hidden md:hidden border-t border-[#444748] px-6 py-4 flex flex-col gap-4 text-sm">
+    <a href="about.html" class="text-[#c4c7c8] hover:text-white py-1">About Us</a>
+    <a href="businesses.html" class="text-[#c4c7c8] hover:text-white py-1 pl-4">↳ Businesses</a>
+    <a href="safety-rules.html" class="text-[#c4c7c8] hover:text-white py-1 pl-4">↳ Safety Rules</a>
+    <a href="activities.html" class="text-[#c4c7c8] hover:text-white py-1">Activities</a>
+    <a href="rooms.html" class="text-[#c4c7c8] hover:text-white py-1">Rooms</a>
+    <a href="restaurants.html" class="text-[#c4c7c8] hover:text-white py-1">Restaurants</a>
+    <a href="contact.html" class="text-[#c4c7c8] hover:text-white py-1">Contact</a>
+    <a href="https://tickets.amirsoy.com" target="_blank" class="bg-white text-[#131313] font-semibold px-5 py-2.5 rounded-full text-center mt-1">Book Now</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<div class="bg-surface-container-low border-b border-outline-variant py-16 px-6 md:px-16">
+  <p class="text-xs font-medium tracking-widest uppercase text-on-surface-variant mb-3">Amirsoy Resort</p>
+  <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">Safety Rules</h1>
+  <p class="text-on-surface-variant text-base max-w-2xl">Please read and follow all resort rules carefully. Your safety and the safety of those around you is our top priority.</p>
+</div>
+
+<!-- DOWNLOAD SECTION -->
+<div class="max-w-4xl mx-auto px-6 md:px-16 pt-12 pb-0">
+  <h2 class="text-lg font-semibold mb-4 text-on-surface-variant uppercase tracking-widest text-sm">Download Full Rules</h2>
+  <div class="flex flex-wrap gap-4">
+    <a href="https://www.amirsoy.com/img/doc/AMIRSOY RESORT RULES_ENG.pdf" target="_blank" class="flex items-center gap-3 bg-surface-container border border-outline-variant rounded-xl px-5 py-3 hover:border-white/30 transition-colors duration-200">
+      <svg class="w-5 h-5 text-on-surface-variant shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+      <div>
+        <p class="text-sm font-medium text-primary">Rules — English</p>
+        <p class="text-xs text-on-surface-variant">PDF · 7.5 MB</p>
+      </div>
+    </a>
+    <a href="https://www.amirsoy.com/img/doc/ПРАВИЛА ГК AMIRSOY_RUS.pdf" target="_blank" class="flex items-center gap-3 bg-surface-container border border-outline-variant rounded-xl px-5 py-3 hover:border-white/30 transition-colors duration-200">
+      <svg class="w-5 h-5 text-on-surface-variant shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+      <div>
+        <p class="text-sm font-medium text-primary">Правила — Русский</p>
+        <p class="text-xs text-on-surface-variant">PDF · 9.2 MB</p>
+      </div>
+    </a>
+    <a href="https://www.amirsoy.com/img/doc/ПРАВИЛА ГК AMIRSOY_UZB.pdf" target="_blank" class="flex items-center gap-3 bg-surface-container border border-outline-variant rounded-xl px-5 py-3 hover:border-white/30 transition-colors duration-200">
+      <svg class="w-5 h-5 text-on-surface-variant shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+      <div>
+        <p class="text-sm font-medium text-primary">Qoidalar — O'zbek</p>
+        <p class="text-xs text-on-surface-variant">PDF · 10 MB</p>
+      </div>
+    </a>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="max-w-4xl mx-auto px-6 md:px-16 py-16 flex flex-col gap-14">
+
+  <!-- Section 1 -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-6 pb-3 border-b border-outline-variant">FIS Alpine Skiing Code — 10 Rules</h2>
+    <div class="flex flex-col gap-5">
+      <div class="flex gap-4 items-start"><div class="rule-number">1</div><div><p class="font-semibold mb-1">Mutual Respect</p><p class="text-on-surface-variant text-sm leading-relaxed">Skiers and snowboarders must behave in a way that does not endanger or prejudice others or their equipment.</p></div></div>
+      <div class="flex gap-4 items-start"><div class="rule-number">2</div><div><p class="font-semibold mb-1">Speed Control</p><p class="text-on-surface-variant text-sm leading-relaxed">Adapt speed and manner of skiing to personal ability, terrain conditions, snow conditions, weather, and density of people on the slope.</p></div></div>
+      <div class="flex gap-4 items-start"><div class="rule-number">3</div><div><p class="font-semibold mb-1">Route Selection</p><p class="text-on-surface-variant text-sm leading-relaxed">The skier/snowboarder coming from behind must choose a route that ensures the safety of those ahead.</p></div></div>
+      <div class="flex gap-4 items-start"><div class="rule-number">4</div><div><p class="font-semibold mb-1">Overtaking</p><p class="text-on-surface-variant text-sm leading-relaxed">Overtaking is allowed from above or below, from right or left, but always with sufficient space for the person being overtaken. The overtaker is responsible throughout.</p></div></div>
+      <div class="flex gap-4 items-start"><div class="rule-number">5</div><div><p class="font-semibold mb-1">Entry & Starting</p><p class="text-on-surface-variant text-sm leading-relaxed">Every skier/snowboarder entering a marked run or starting after stopping must look both up and down the slope and ensure it is safe to do so.</p></div></div>
+      <div class="flex gap-4 items-start"><div class="rule-number">6</div><div><p class="font-semibold mb-1">Slope Stopping</p><p class="text-on-surface-variant text-sm leading-relaxed">Avoid stopping in narrow places or where visibility is limited. After a fall, clear the slope as quickly as possible.</p></div></div>
+      <div class="flex gap-4 items-start"><div class="rule-number">7</div><div><p class="font-semibold mb-1">Walking on Slopes</p><p class="text-on-surface-variant text-sm leading-relaxed">Stay to the edge of the slope when walking up or down. Footprints create hazards for other users.</p></div></div>
+      <div class="flex gap-4 items-start"><div class="rule-number">8</div><div><p class="font-semibold mb-1">Sign Compliance</p><p class="text-on-surface-variant text-sm leading-relaxed">Follow all slope markings and signs. Slopes are rated by difficulty: green (beginner), blue (intermediate), red (advanced), black (expert).</p></div></div>
+      <div class="flex gap-4 items-start"><div class="rule-number">9</div><div><p class="font-semibold mb-1">Accident Assistance</p><p class="text-on-surface-variant text-sm leading-relaxed">In case of accident, every skier/snowboarder is duty bound to assist. Secure the accident area and alert rescue services.</p></div></div>
+      <div class="flex gap-4 items-start"><div class="rule-number">10</div><div><p class="font-semibold mb-1">Information Exchange</p><p class="text-on-surface-variant text-sm leading-relaxed">All persons involved in an accident, including witnesses, must exchange personal details and contact information.</p></div></div>
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-6 pb-3 border-b border-outline-variant">General Resort Rules</h2>
+    <div class="bg-surface-container rounded-xl p-6 text-sm text-on-surface-variant leading-relaxed flex flex-col gap-3">
+      <p>Children must not be left unattended on resort territory at any time.</p>
+      <p>Littering and leaving waste outside designated areas is strictly prohibited.</p>
+      <p>Unauthorized commercial filming or photography for commercial purposes requires prior approval.</p>
+      <p>Alcohol consumption outside of designated restaurant and bar areas is not permitted.</p>
+      <p>Smoking is only allowed in designated smoking areas.</p>
+      <p>Drone use on resort territory requires advance written permission from resort management.</p>
+      <p>Suspicious items or packages must be reported to resort security immediately.</p>
+    </div>
+  </div>
+
+  <!-- Section 3 -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-6 pb-3 border-b border-outline-variant">Ski Pass Rules</h2>
+    <div class="bg-surface-container rounded-xl p-6 text-sm text-on-surface-variant leading-relaxed flex flex-col gap-3">
+      <p>Ski passes are magnetic cards granting access to lifts, prepared slopes, and storage lockers.</p>
+      <p>Passes are strictly non-transferable. A second use of a single-use pass will result in non-refundable cancellation.</p>
+      <p>Counterfeiting or duplication of passes will result in immediate involvement of law enforcement authorities.</p>
+    </div>
+  </div>
+
+  <!-- Section 4 -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-6 pb-3 border-b border-outline-variant">Cable Car Rules</h2>
+    <div class="bg-surface-container rounded-xl p-6 text-sm text-on-surface-variant leading-relaxed flex flex-col gap-3">
+      <p><span class="text-primary font-medium">Children:</span> Children under 130 cm require adult supervision on chairlifts. Children under 1 year are prohibited on chairlifts.</p>
+      <p><span class="text-primary font-medium">Gondolas:</span> Maximum 8 passengers per cabin. Remain seated during travel. Do not obstruct doors, open doors while moving, throw items, or rock cabins.</p>
+      <p><span class="text-primary font-medium">Chairlifts:</span> Skis must be fastened; snowboards on one foot only. Do not swing chairs or raise safety bars while in motion.</p>
+      <p><span class="text-primary font-medium">Conveyor Lifts:</span> Board only at the designated start point. Maintain a forward-facing position. Do not sit, move on the belt, or exit before the designated exit point.</p>
+    </div>
+  </div>
+
+  <!-- Section 5 -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-6 pb-3 border-b border-outline-variant">Tubing Rules</h2>
+    <div class="bg-surface-container rounded-xl p-6 text-sm text-on-surface-variant leading-relaxed flex flex-col gap-3">
+      <p><span class="text-primary font-medium">Access restrictions:</span> Children under 130 cm must be accompanied by an adult. Children under 4 years require direct supervision. Prohibited for persons with heart conditions, pregnant women, and those who are intoxicated.</p>
+      <p><span class="text-primary font-medium">Footwear:</span> Heel shoes and ski boots are prohibited on tubing slopes.</p>
+      <p><span class="text-primary font-medium">Operation:</span> Sit upright only. No flipping or rocking tubes. Spinning, hand-braking, and linked descents are forbidden.</p>
+      <p><span class="text-primary font-medium">Equipment:</span> Return tubes undamaged. Damage liability applies on the same day of rental.</p>
+    </div>
+  </div>
+
+  <!-- Section 6 -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-6 pb-3 border-b border-outline-variant">Ski Slope Rules</h2>
+    <div class="bg-surface-container rounded-xl p-6 text-sm text-on-surface-variant leading-relaxed flex flex-col gap-3">
+      <p>The skier/snowboarder downslope always has right of way. Those coming from behind must ensure safe distance.</p>
+      <p>Adapt speed to personal skill level, visibility, slope density, and weather conditions at all times.</p>
+      <p>Helmets are mandatory for all ages on all slopes and lifts.</p>
+      <p>Skiing or snowboarding while intoxicated is strictly prohibited and will result in immediate pass cancellation.</p>
+      <p>Violations of slope rules may result in pass cancellation and blacklisting from the resort.</p>
+    </div>
+  </div>
+
+  <!-- Section 7 -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-6 pb-3 border-b border-outline-variant">Locker Rules</h2>
+    <div class="bg-surface-container rounded-xl p-6 text-sm text-on-surface-variant leading-relaxed flex flex-col gap-3">
+      <p>Storage of animals, weapons, explosives, or hazardous materials in lockers is strictly prohibited.</p>
+      <p>Report lost locker keys to resort staff immediately.</p>
+      <p>The resort is not responsible for the security of personal property left in lockers.</p>
+    </div>
+  </div>
+
+  <!-- Section 8 -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-6 pb-3 border-b border-outline-variant">Equipment Rental Rules</h2>
+    <div class="bg-surface-container rounded-xl p-6 text-sm text-on-surface-variant leading-relaxed flex flex-col gap-3">
+      <p>Valid ID and a signed rental contract are required before equipment is issued.</p>
+      <p>Minimum rental period is one day. Fees are non-refundable after first use.</p>
+      <p>Renting equipment while intoxicated, subletting, self-repairing, removing from resort property, or unauthorized transfers are all prohibited.</p>
+      <p>Clients are financially responsible for any damage or loss of rented equipment.</p>
+      <p>All equipment must be returned clean at least 15 minutes before resort closing time.</p>
+    </div>
+  </div>
+
+  <!-- Section 9 -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-6 pb-3 border-b border-outline-variant">Instructor Rules</h2>
+    <div class="bg-surface-container rounded-xl p-6 text-sm text-on-surface-variant leading-relaxed flex flex-col gap-3">
+      <p>Instructor services do not include lift passes or equipment rental — these must be purchased separately.</p>
+      <p>Lessons while intoxicated or ignoring instructor guidance are prohibited.</p>
+      <p>Informal or unauthorized hiring of resort instructors is not permitted.</p>
+      <p>Unused prepaid lesson time is non-refundable.</p>
+    </div>
+  </div>
+
+  <!-- Section 10 -->
+  <div>
+    <h2 class="text-2xl font-semibold mb-6 pb-3 border-b border-outline-variant">Parking Rules</h2>
+    <div class="bg-surface-container rounded-xl p-6 text-sm text-on-surface-variant leading-relaxed flex flex-col gap-3">
+      <p>Parking facilities operate 24 hours a day, 7 days a week.</p>
+      <p>Vehicles with fuel/oil leaks, missing registration, or carrying hazardous cargo are not permitted.</p>
+      <p>Maximum speed on parking territory is 5 km/hour.</p>
+      <p>Vehicle repairs, washing, open fires, and extended overnight stays are prohibited.</p>
+      <p>The resort is not responsible for theft or damage to vehicles or their contents.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-[#131313] border-t border-[#444748] pt-14 pb-8 px-6 md:px-16">
+  <div class="max-w-5xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-10 pb-10 border-b border-[#444748]">
+      <div>
+        <img src="img/logo-svg-white.svg" alt="Amirsoy" class="h-10 w-auto mb-4"/>
+        <p class="text-[#c4c7c8] text-sm leading-relaxed mb-5">Amirsoy Mountain Resort — an all-season destination 65 km from Tashkent in the Tian Shan Mountains.</p>
+        <div class="flex items-center gap-4">
+          <a href="https://www.facebook.com/amirsoyresort/" class="text-[#c4c7c8] hover:text-white transition-colors duration-200" aria-label="Facebook"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/amirsoyresort/" class="text-[#c4c7c8] hover:text-white transition-colors duration-200" aria-label="Instagram"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://t.me/amirsoy_resort" class="text-[#c4c7c8] hover:text-white transition-colors duration-200" aria-label="Telegram"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.68 7.92c-.12.56-.46.7-.94.44l-2.6-1.92-1.26 1.2c-.14.14-.26.26-.52.26l.18-2.62 4.72-4.26c.2-.18-.04-.28-.32-.1L7.46 14.5l-2.54-.8c-.56-.18-.58-.56.12-.82l9.92-3.82c.46-.18.86.1.68.74z"/></svg></a>
+          <a href="https://www.youtube.com/channel/UCCkNVd3cUbiBX_X566lNdgQ" class="text-[#c4c7c8] hover:text-white transition-colors duration-200" aria-label="YouTube"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <p class="text-xs font-medium tracking-widest uppercase text-[#c4c7c8] mb-4">Navigation</p>
+        <div class="flex flex-col gap-2.5 text-sm">
+          <a href="activities.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Activities</a>
+          <a href="rooms.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Accommodation</a>
+          <a href="restaurants.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Restaurants</a>
+          <a href="businesses.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Business</a>
+          <a href="contact.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Contact</a>
+        </div>
+      </div>
+      <div>
+        <p class="text-xs font-medium tracking-widest uppercase text-[#c4c7c8] mb-4">Contact</p>
+        <div class="flex flex-col gap-2.5 text-sm text-[#c4c7c8]">
+          <a href="tel:+998712002290" class="hover:text-white transition-colors duration-200">+998 (71) 200-22-90</a>
+          <a href="mailto:info@amirsoy.com" class="hover:text-white transition-colors duration-200">info@amirsoy.com</a>
+          <span>Bostonliq district, Chimgan Territory,<br/>Tashkent region, Uzbekistan</span>
+          <a href="https://tickets.amirsoy.com" target="_blank" class="mt-2 inline-flex items-center justify-center bg-white text-[#131313] font-semibold px-5 py-2.5 rounded-full text-sm hover:bg-white/90 transition-colors duration-200">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="pt-6 flex flex-wrap items-center justify-between gap-4 text-xs text-[#c4c7c8]">
+      <p>© 2026 Amirsoy Mountain Resort. All rights reserved.</p>
+      <div class="flex gap-6">
+        <a href="offer.html" class="hover:text-white transition-colors duration-200">Public Offer</a>
+        <a href="privacy-policy.html" class="hover:text-white transition-colors duration-200">Privacy Policy</a>
+        <a href="safety-rules.html" class="hover:text-white transition-colors duration-200">Safety Rules</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" style="opacity:0;pointer-events:none;" class="fixed bottom-6 right-6 z-50 bg-white text-[#131313] w-10 h-10 rounded-full shadow-xl flex items-center justify-center transition-opacity duration-300 hover:bg-white/90" aria-label="Back to top">
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+</button>
+<script>var _st=document.getElementById('scroll-top');window.addEventListener('scroll',function(){var v=window.scrollY>300;_st.style.opacity=v?'1':'0';_st.style.pointerEvents=v?'auto':'none';});</script>
+</body>
+</html>

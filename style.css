@@ -1,0 +1,315 @@
+/* Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Readex Pro', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Readex Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #131313;
+}
+
+/* Hero */
+.hero-title {
+  font-size: 11vw;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  font-weight: 700;
+  margin: 0;
+  will-change: transform;
+}
+
+/* Section label */
+.section-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8e9192;
+  margin-bottom: 10px;
+}
+
+/* Language dropdown */
+#lang-menu {
+  animation: dropDown 0.18s cubic-bezier(0.16,1,0.3,1);
+  transform-origin: top right;
+}
+
+@keyframes dropDown {
+  from { opacity: 0; transform: scale(0.92) translateY(-6px); }
+  to   { opacity: 1; transform: scale(1)    translateY(0);     }
+}
+
+/* Language switcher (legacy — kept for .lang-btn if reused) */
+.lang-btn {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-family: 'Readex Pro', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  color: #c4c7c8;
+  padding: 4px 9px;
+  border-radius: 20px;
+  transition: color 0.2s, background 0.2s;
+  line-height: 1;
+}
+.lang-btn:hover { color: #ffffff; }
+.lang-btn.active {
+  color: #ffffff;
+  background: rgba(255,255,255,0.12);
+  font-weight: 600;
+}
+
+/* Cards */
+.activity-card:hover {
+  box-shadow: 0 0 28px rgba(255,255,255,0.05);
+  transform: translateY(-3px);
+}
+.room-card {
+  transition: transform 0.4s cubic-bezier(0.16,1,0.3,1),
+              border-color 0.3s,
+              box-shadow 0.4s;
+}
+.room-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255,255,255,0.25);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+}
+
+/* 3-D SCROLL ANIMATION SYSTEM */
+
+/* Initial states — hidden & transformed */
+[data-reveal] {
+  will-change: opacity, transform;
+  opacity: 0;
+}
+
+[data-reveal="up"] {
+  transform: perspective(1000px) rotateX(18deg) translateY(70px);
+  transition: opacity 0.9s cubic-bezier(0.16,1,0.3,1),
+              transform 0.9s cubic-bezier(0.16,1,0.3,1);
+}
+
+[data-reveal="left"] {
+  transform: perspective(1000px) rotateY(28deg) translateX(-80px);
+  transition: opacity 0.9s cubic-bezier(0.16,1,0.3,1),
+              transform 0.9s cubic-bezier(0.16,1,0.3,1);
+}
+
+[data-reveal="right"] {
+  transform: perspective(1000px) rotateY(-28deg) translateX(80px);
+  transition: opacity 0.9s cubic-bezier(0.16,1,0.3,1),
+              transform 0.9s cubic-bezier(0.16,1,0.3,1);
+}
+
+[data-reveal="scale"] {
+  transform: perspective(1000px) scale(0.82) translateZ(-120px) rotateX(10deg);
+  transition: opacity 0.85s cubic-bezier(0.16,1,0.3,1),
+              transform 0.85s cubic-bezier(0.16,1,0.3,1);
+}
+
+/* Revealed state — back to identity */
+[data-reveal].in-view {
+  opacity: 1;
+  transform: perspective(1000px) rotateX(0) rotateY(0) translateX(0) translateY(0) translateZ(0) scale(1);
+}
+
+/* Stagger delays */
+[data-delay="1"] { transition-delay: 0.08s; }
+[data-delay="2"] { transition-delay: 0.16s; }
+[data-delay="3"] { transition-delay: 0.24s; }
+[data-delay="4"] { transition-delay: 0.32s; }
+[data-delay="5"] { transition-delay: 0.40s; }
+[data-delay="6"] { transition-delay: 0.48s; }
+
+/* Light sections — alternating white/dark scroll */
+.light-section {
+  background-color: #f5f5f3;
+}
+
+/* Text */
+.light-section .section-label       { color: #767676; }
+.light-section h2                   { color: #111111; }
+.light-section h3                   { color: #111111; }
+.light-section .text-primary        { color: #111111; }
+.light-section .text-on-surface-variant { color: #555555; }
+.light-section p                    { color: #555555; }
+
+/* Cards */
+.light-section .bg-surface-container {
+  background-color: #ffffff;
+}
+.light-section .border-outline-variant {
+  border-color: #d8d8d6;
+}
+
+/* Room card hover on light bg */
+.light-section .room-card:hover {
+  border-color: rgba(0,0,0,0.2);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+}
+
+/* About image gradient — flip to white */
+.light-section .bg-gradient-to-t {
+  background: linear-gradient(to top, rgba(245,245,243,0.7), transparent);
+}
+
+/* Reviews — infinite swim marquee */
+@keyframes reviewsSwim {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.reviews-marquee {
+  display: flex;
+  gap: 28px;
+  width: max-content;
+  animation: reviewsSwim 35s linear infinite;
+}
+
+.reviews-marquee:hover {
+  animation-play-state: paused;
+}
+
+.review-card {
+  width: 360px;
+  flex-shrink: 0;
+  background: #1a1a1a;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+/* Big decorative opening quote */
+.review-card::before {
+  content: '\201C';
+  font-family: 'Playfair Display', serif;
+  font-size: 80px;
+  line-height: 1;
+  color: rgba(255,255,255,0.1);
+  position: absolute;
+  top: 12px;
+  left: 24px;
+}
+
+/* Stars */
+.review-card > div:first-child {
+  color: #f59e0b;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+/* Quote text */
+.review-card > p {
+  font-family: 'Readex Pro', sans-serif !important;
+  font-style: normal;
+  font-size: 15px !important;
+  line-height: 1.7;
+  color: #ffffff !important;
+  position: relative;
+  z-index: 1;
+}
+
+/* Author row */
+.review-card > div:last-child {
+  border-top: 1px solid rgba(255,255,255,0.1) !important;
+  padding-top: 16px;
+  margin-top: auto;
+}
+
+.review-card > div:last-child p:first-child {
+  color: #ffffff !important;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.review-card > div:last-child p:last-child {
+  color: #888888 !important;
+  font-size: 11px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar        { width: 4px; }
+::-webkit-scrollbar-track  { background: #131313; }
+::-webkit-scrollbar-thumb  { background: #444748; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #8e9192; }
+
+/* Responsive */
+/* Mobile — ≤ 640px */
+@media (max-width: 640px) {
+  .hero-title { font-size: 18vw; }
+
+  /* Sections — reduce vertical padding */
+  .light-section,
+  section[id] { padding-top: 3rem; padding-bottom: 3rem; }
+
+  /* Headings — scale down 48px headlines */
+  .text-headline-lg, [class*="text-headline-lg"]:not([class*="mobile"]) {
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+  }
+
+  /* About section images — shorter on small screens */
+  .about-img { height: 11rem; }
+
+  /* Table — horizontal scroll on all tables */
+  table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; white-space: nowrap; }
+  table thead, table tbody, table tr { display: table; width: 100%; }
+  .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+  /* Chalet gallery — single column on very small screens */
+  .gallery-grid-mobile { grid-template-columns: 1fr !important; }
+  .gallery-grid-mobile .col-span-2 { grid-column: span 1 !important; }
+  .gallery-grid-mobile .row-span-2 { grid-row: span 1 !important; }
+
+  /* Specs bar — smaller gap */
+  .specs-bar { gap: 1rem 1.5rem; }
+
+  /* Chalet booking CTA buttons — stack */
+  .booking-cta-btns { flex-direction: column; }
+
+  /* Index — hide lang switcher if pill nav gets too tight */
+  #lang-switcher { top: 10px; right: 10px; }
+  #lang-switcher button { padding: 4px 10px; }
+
+  /* Footer grid — single column */
+  .footer-grid { grid-template-columns: 1fr !important; }
+
+  /* Review card width on mobile */
+  .review-card { width: 290px; padding: 20px; }
+
+  /* Reduce review card quote size */
+  .review-card::before { font-size: 56px; }
+}
+
+/* Mobile — ≤ 768px */
+@media (max-width: 768px) {
+  /* Inner page hero text */
+  h1 { word-break: break-word; }
+
+  /* Chalet specs bar — wrap tighter */
+  .flex-wrap { flex-wrap: wrap; }
+
+  /* Table responsive */
+  .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 0.75rem; }
+
+  /* Inner page section content padding */
+  .max-w-5xl.mx-auto.px-6 { padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; }
+
+  /* Reduce gap between sections on mobile */
+  .flex.flex-col.gap-20 { gap: 3rem; }
+  .flex.flex-col.gap-16 { gap: 2.5rem; }
+}

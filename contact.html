@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html class="dark w-full" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us — Amirsoy Mountain Resort</title>
+<meta name="description" content="Contact Amirsoy Mountain Resort — phone, email, address, and social media. Located in Chimgan Territory, Tashkent region, Uzbekistan."/>
+<link rel="icon" href="img/logo-svg-white.svg" type="image/svg+xml"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: { extend: { colors: { "background": "#131313", "surface-container": "#1f1f1f", "surface-container-low": "#1b1b1b", "outline-variant": "#444748", "on-surface-variant": "#c4c7c8", "primary": "#ffffff" } } }
+  }
+</script>
+<style>
+  body { font-family: 'Readex Pro', sans-serif; background: #131313; color: #ffffff; margin: 0; padding: 0; }
+</style>
+<script src="lang/en.js"></script>
+<script src="lang/ru.js"></script>
+<script src="lang/uz.js"></script>
+<script src="lang-init.js"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-[#131313]/90 backdrop-blur-xl border-b border-[#444748]">
+  <div class="flex items-center justify-between px-6 md:px-16 py-4">
+    <a href="index.html"><img src="img/logo-svg-white.svg" alt="Amirsoy" class="h-8 w-auto"/></a>
+    <div class="hidden md:flex items-center gap-6 text-sm">
+      <div class="relative group">
+        <a class="flex items-center gap-1 text-[#c4c7c8] hover:text-white transition-colors duration-200" href="about.html">About Us
+          <svg class="w-3 h-3 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <div class="absolute left-1/2 -translate-x-1/2 top-full pt-3 hidden group-hover:block">
+          <div class="bg-[#1f1f1f]/95 backdrop-blur-xl border border-white/10 rounded-xl overflow-hidden min-w-[180px] shadow-xl">
+            <a href="about.html" class="block px-4 py-2.5 text-sm text-[#c4c7c8] hover:text-white hover:bg-white/5 transition-colors duration-150">Resort Info</a>
+            <a href="businesses.html" class="block px-4 py-2.5 text-sm text-[#c4c7c8] hover:text-white hover:bg-white/5 transition-colors duration-150">Businesses</a>
+            <a href="safety-rules.html" class="block px-4 py-2.5 text-sm text-[#c4c7c8] hover:text-white hover:bg-white/5 transition-colors duration-150">Safety Rules</a>
+          </div>
+        </div>
+      </div>
+      <a href="activities.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Activities</a>
+      <a href="rooms.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Rooms</a>
+      <a href="restaurants.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Restaurants</a>
+      <a href="contact.html" class="text-white font-medium hover:text-white transition-colors duration-200">Contact</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="https://tickets.amirsoy.com" target="_blank" class="hidden md:inline-flex bg-white text-[#131313] font-semibold text-sm px-5 py-2 rounded-full hover:bg-white/90 transition-all duration-200">Book Now</a>
+      <button class="md:hidden p-2 text-[#c4c7c8] hover:text-white" onclick="document.getElementById('mob-menu').classList.toggle('hidden')" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mob-menu" class="hidden md:hidden border-t border-[#444748] px-6 py-4 flex flex-col gap-4 text-sm">
+    <a href="about.html" class="text-[#c4c7c8] hover:text-white py-1">About Us</a>
+    <a href="businesses.html" class="text-[#c4c7c8] hover:text-white py-1 pl-4">↳ Businesses</a>
+    <a href="safety-rules.html" class="text-[#c4c7c8] hover:text-white py-1 pl-4">↳ Safety Rules</a>
+    <a href="activities.html" class="text-[#c4c7c8] hover:text-white py-1">Activities</a>
+    <a href="rooms.html" class="text-[#c4c7c8] hover:text-white py-1">Rooms</a>
+    <a href="restaurants.html" class="text-[#c4c7c8] hover:text-white py-1">Restaurants</a>
+    <a href="contact.html" class="text-[#c4c7c8] hover:text-white py-1">Contact</a>
+    <a href="https://tickets.amirsoy.com" target="_blank" class="bg-white text-[#131313] font-semibold px-5 py-2.5 rounded-full text-center mt-1">Book Now</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<div class="bg-surface-container-low border-b border-outline-variant py-16 px-6 md:px-16">
+  <p class="text-xs font-medium tracking-widest uppercase text-on-surface-variant mb-3">Amirsoy Resort</p>
+  <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">Contact Us</h1>
+  <p class="text-on-surface-variant text-base max-w-2xl">For quick responses, reach us directly via social networks or call the numbers below.</p>
+</div>
+
+<!-- CONTENT -->
+<div class="max-w-5xl mx-auto px-6 md:px-16 py-16 flex flex-col gap-10">
+
+  <!-- Cards grid -->
+  <div class="grid md:grid-cols-2 gap-6">
+
+    <!-- Resort -->
+    <div class="bg-surface-container border border-outline-variant rounded-xl p-7 flex flex-col gap-5">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-white/8 border border-outline-variant flex items-center justify-center shrink-0">
+          <svg class="w-5 h-5 text-on-surface-variant" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+        </div>
+        <h2 class="text-lg font-semibold">Main Resort</h2>
+      </div>
+      <div class="flex flex-col gap-3 text-sm text-on-surface-variant">
+        <div class="flex items-start gap-3">
+          <svg class="w-4 h-4 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+          <span>Bostonliq District, Chimgan KFI Territory, Uzbekistan</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          <a href="tel:+998712002290" class="hover:text-primary transition-colors duration-200">+998 (71) 200-22-90</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0l-9.75 6.75L2.25 6.75"/></svg>
+          <a href="mailto:info@amirsoy.com" class="hover:text-primary transition-colors duration-200">info@amirsoy.com</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <span>24/7 (except lifts and restaurants)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tashkent Office -->
+    <div class="bg-surface-container border border-outline-variant rounded-xl p-7 flex flex-col gap-5">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-white/8 border border-outline-variant flex items-center justify-center shrink-0">
+          <svg class="w-5 h-5 text-on-surface-variant" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
+        </div>
+        <h2 class="text-lg font-semibold">Tashkent Sales Office</h2>
+      </div>
+      <div class="flex flex-col gap-3 text-sm text-on-surface-variant">
+        <div class="flex items-start gap-3">
+          <svg class="w-4 h-4 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+          <span>25B Abdulla Qodiriy str., Yunusabad district, Kashgar neighborhood (C-4), Tashkent</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          <div class="flex flex-col gap-1">
+            <a href="tel:+998997902244" class="hover:text-primary transition-colors duration-200">+998 (99) 790-22-44</a>
+            <a href="tel:+998997912244" class="hover:text-primary transition-colors duration-200">+998 (99) 791-22-44</a>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0l-9.75 6.75L2.25 6.75"/></svg>
+          <a href="mailto:sales@amirsoy.com" class="hover:text-primary transition-colors duration-200">sales@amirsoy.com</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <span>Mon – Sat: 9:00 – 18:00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Le Chalet -->
+    <div class="bg-surface-container border border-outline-variant rounded-xl p-7 flex flex-col gap-5">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-white/8 border border-outline-variant flex items-center justify-center shrink-0">
+          <svg class="w-5 h-5 text-on-surface-variant" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
+        </div>
+        <h2 class="text-lg font-semibold">Le Chalet Reception</h2>
+      </div>
+      <div class="flex flex-col gap-3 text-sm text-on-surface-variant">
+        <div class="flex items-center gap-3">
+          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          <a href="tel:+998951775599" class="hover:text-primary transition-colors duration-200">+998 (95) 177-55-99</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <span>24/7</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Emergency -->
+    <div class="bg-surface-container border border-outline-variant rounded-xl p-7 flex flex-col gap-5">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-white/8 border border-outline-variant flex items-center justify-center shrink-0">
+          <svg class="w-5 h-5 text-on-surface-variant" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/></svg>
+        </div>
+        <h2 class="text-lg font-semibold">Emergency Services</h2>
+      </div>
+      <div class="flex flex-col gap-3 text-sm text-on-surface-variant">
+        <div class="flex items-center gap-3">
+          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          <div class="flex flex-col gap-1">
+            <span>Ski Patrol / Rescue: <a href="tel:+998950032244" class="hover:text-primary transition-colors duration-200">+998 (95) 003-22-44</a></span>
+            <span>Info Point / Lost & Found: <a href="tel:+998712002290" class="hover:text-primary transition-colors duration-200">+998 (71) 200-22-90</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- MAP — full width with side margins -->
+<div class="px-6 md:px-16" style="height:520px;">
+  <iframe
+    src="https://www.google.com/maps?q=Amirsoy+Mountain+Resort,+Chimgan,+Uzbekistan&output=embed"
+    width="100%" height="100%"
+    style="border:0;display:block;"
+    loading="lazy"
+    allowfullscreen
+    title="Amirsoy Resort Location">
+  </iframe>
+</div>
+
+<div class="max-w-5xl mx-auto px-6 md:px-16 py-10 flex flex-col gap-10">
+
+  <!-- Social media -->
+  <div>
+    <h2 class="text-xl font-semibold mb-5">Follow Us</h2>
+    <div class="flex flex-wrap gap-4">
+      <a href="https://www.facebook.com/amirsoyresort/" class="flex items-center gap-3 bg-surface-container border border-outline-variant rounded-xl px-5 py-3 hover:border-white/30 transition-colors duration-200 text-sm text-on-surface-variant hover:text-primary">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        Facebook
+      </a>
+      <a href="https://www.instagram.com/amirsoyresort/" class="flex items-center gap-3 bg-surface-container border border-outline-variant rounded-xl px-5 py-3 hover:border-white/30 transition-colors duration-200 text-sm text-on-surface-variant hover:text-primary">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        Instagram
+      </a>
+      <a href="https://t.me/amirsoy_resort" class="flex items-center gap-3 bg-surface-container border border-outline-variant rounded-xl px-5 py-3 hover:border-white/30 transition-colors duration-200 text-sm text-on-surface-variant hover:text-primary">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.68 7.92c-.12.56-.46.7-.94.44l-2.6-1.92-1.26 1.2c-.14.14-.26.26-.52.26l.18-2.62 4.72-4.26c.2-.18-.04-.28-.32-.1L7.46 14.5l-2.54-.8c-.56-.18-.58-.56.12-.82l9.92-3.82c.46-.18.86.1.68.74z"/></svg>
+        Telegram
+      </a>
+      <a href="https://www.youtube.com/channel/UCCkNVd3cUbiBX_X566lNdgQ?view_as=subscriber" class="flex items-center gap-3 bg-surface-container border border-outline-variant rounded-xl px-5 py-3 hover:border-white/30 transition-colors duration-200 text-sm text-on-surface-variant hover:text-primary">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+        YouTube
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-[#131313] border-t border-[#444748] pt-14 pb-8 px-6 md:px-16">
+  <div class="max-w-5xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-10 pb-10 border-b border-[#444748]">
+      <div>
+        <img src="img/logo-svg-white.svg" alt="Amirsoy" class="h-10 w-auto mb-4"/>
+        <p class="text-[#c4c7c8] text-sm leading-relaxed mb-5">Amirsoy Mountain Resort — an all-season destination 65 km from Tashkent in the Tian Shan Mountains.</p>
+        <div class="flex items-center gap-4">
+          <a href="https://www.facebook.com/amirsoyresort/" class="text-[#c4c7c8] hover:text-white transition-colors duration-200" aria-label="Facebook"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/amirsoyresort/" class="text-[#c4c7c8] hover:text-white transition-colors duration-200" aria-label="Instagram"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://t.me/amirsoy_resort" class="text-[#c4c7c8] hover:text-white transition-colors duration-200" aria-label="Telegram"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.68 7.92c-.12.56-.46.7-.94.44l-2.6-1.92-1.26 1.2c-.14.14-.26.26-.52.26l.18-2.62 4.72-4.26c.2-.18-.04-.28-.32-.1L7.46 14.5l-2.54-.8c-.56-.18-.58-.56.12-.82l9.92-3.82c.46-.18.86.1.68.74z"/></svg></a>
+          <a href="https://www.youtube.com/channel/UCCkNVd3cUbiBX_X566lNdgQ" class="text-[#c4c7c8] hover:text-white transition-colors duration-200" aria-label="YouTube"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <p class="text-xs font-medium tracking-widest uppercase text-[#c4c7c8] mb-4">Navigation</p>
+        <div class="flex flex-col gap-2.5 text-sm">
+          <a href="activities.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Activities</a>
+          <a href="rooms.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Accommodation</a>
+          <a href="restaurants.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Restaurants</a>
+          <a href="businesses.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Business</a>
+          <a href="contact.html" class="text-[#c4c7c8] hover:text-white transition-colors duration-200">Contact</a>
+        </div>
+      </div>
+      <div>
+        <p class="text-xs font-medium tracking-widest uppercase text-[#c4c7c8] mb-4">Contact</p>
+        <div class="flex flex-col gap-2.5 text-sm text-[#c4c7c8]">
+          <a href="tel:+998712002290" class="hover:text-white transition-colors duration-200">+998 (71) 200-22-90</a>
+          <a href="mailto:info@amirsoy.com" class="hover:text-white transition-colors duration-200">info@amirsoy.com</a>
+          <span>Bostonliq district, Chimgan Territory,<br/>Tashkent region, Uzbekistan</span>
+          <a href="https://tickets.amirsoy.com" target="_blank" class="mt-2 inline-flex items-center justify-center bg-white text-[#131313] font-semibold px-5 py-2.5 rounded-full text-sm hover:bg-white/90 transition-colors duration-200">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="pt-6 flex flex-wrap items-center justify-between gap-4 text-xs text-[#c4c7c8]">
+      <p>© 2026 Amirsoy Mountain Resort. All rights reserved.</p>
+      <div class="flex gap-6">
+        <a href="offer.html" class="hover:text-white transition-colors duration-200">Public Offer</a>
+        <a href="privacy-policy.html" class="hover:text-white transition-colors duration-200">Privacy Policy</a>
+        <a href="safety-rules.html" class="hover:text-white transition-colors duration-200">Safety Rules</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" style="opacity:0;pointer-events:none;" class="fixed bottom-6 right-6 z-50 bg-white text-[#131313] w-10 h-10 rounded-full shadow-xl flex items-center justify-center transition-opacity duration-300 hover:bg-white/90" aria-label="Back to top">
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+</button>
+<script>var _st=document.getElementById('scroll-top');window.addEventListener('scroll',function(){var v=window.scrollY>300;_st.style.opacity=v?'1':'0';_st.style.pointerEvents=v?'auto':'none';});</script>
+</body>
+</html>

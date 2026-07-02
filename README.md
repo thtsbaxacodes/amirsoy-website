@@ -18,7 +18,7 @@ Uzbek.
 - `restaurants.html` + five `restaurant-*.html` detail pages
 - `businesses.html`, `contact.html`, `safety-rules.html`, `offer.html`, `privacy-policy.html`
 
-## Built with
+## Built with 
 
 - HTML + Tailwind (via CDN)
 - Vanilla JavaScript — no framework
